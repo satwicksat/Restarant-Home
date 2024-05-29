@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kaushan+Script&family=Lobster&family=Montserrat&family=Open+Sans:wght@500&family=Poppins:wght@400;500;700&family=Style+Script&display=swap');
+
+/* font-family: 'Agbalumo', system-ui;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lobster', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Style Script', cursive; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav-elements a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .2s ease;
+    position: relative;
+}
+
+.nav-elements a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    border-radius: 0 100px 100px 0;
+    bottom: -2px;
+    left: 0;
+    transition: .2s ease;
+    background: #FFC100;
+}
+
+.nav-elements a:hover::after{
+    width: 100%;
+}
+
+.nav-elements a:hover,
+.nav-elements a.active{
+    color: #FFC100;
+    transform: scale(1.1);
+}
+
+.order-btn{
+    background: #FFC100;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #FFC100;
+    border-radius: .5rem;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.order-btn:hover{
+background: transparent;
+    color: #FFC100;   
+} 
+
+/* home */
+
+.home{
+    background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .2)), url('D:\satt\aditya\IMG-20240528-WA0003.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.home-text h1{
+    font-family: 'agbalumo';
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    margin: 25px 0;
+    letter-spacing: 5px;
+}
+
+.home-text{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-20%, -50%);
+    width: 45%;
+    line-height: 35px;
+}
+
+.home-btn{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px;
+    background: #FFC100;
+    cursor: pointer;
+}
+
+.home-btn-line{
+    width: 1.8px;
+    border-radius: 50px;
+    height: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    background: black;
+}
+
+.home-btn-left{
+    width: 49%;
+    height: 100%;
+    border-radius: 100px 0 0 100px;
+    background: transparent;
+    border: none;
+    cursor: pointer;    
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    transition: .35s ease;
+}
+
+.home-btn-left:hover,
+.home-btn-right:hover{
+    box-shadow: 0 0 7px rgba(0, 0, 0, 1) inset;
+}
+
+.home-btn-right{
+    width: 49%;
+    height: 100%;
+    border-radius: 0 100px 100px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    transition: .35s ease;
+}
